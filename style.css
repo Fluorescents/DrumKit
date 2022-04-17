@@ -1,0 +1,111 @@
+.kit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:10%;
+    height: 500px;
+}
+
+.cymbals{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 500px;
+    width: 600px;
+}
+
+#crash{
+    text-align:center;
+    position: relative;
+    right:125px;
+    width:170px;
+    height:40px;
+    line-height:40px;
+    margin: 10px;
+    margin-top: 50px;
+    margin-bottom:0px;
+    font-size:50px;
+    background-color: gold;
+}
+
+#crash:hover{
+    background-color:darkgoldenrod;
+}
+
+#hihat{
+    text-align:center;
+    position: relative;
+    left:115px;
+    width:150px;
+    height:40px;
+    line-height: 40px;
+    margin: 10px;
+    margin-top: 150px;
+    margin-bottom:0px;
+    font-size:50px;
+    background-color: gold;
+}
+
+#hihat:hover{
+    background-color:darkgoldenrod;
+}
+
+.drums{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#kick{
+    text-align:center;
+    width:200px;
+    height:200px;
+    line-height:200px;
+    margin: 10px;
+    margin-top: 50px;
+    margin-bottom:0px;
+    font-size:100px;
+    border-radius:100%;
+    border: 25px solid tan;
+    background-color: white;
+}
+
+#kick:hover{
+    border-color: rgb(118, 100, 78);
+    background-color: rgb(145, 145, 145);
+}
+
+#tom{
+    text-align:center;
+    width:120px;
+    height:150px;
+    line-height:150px;
+    margin: 10px;
+    margin-top: 50px;
+    margin-bottom:0px;
+    font-size:75px;
+    background-color: rgb(53, 122, 41);
+}
+
+#tom:hover{
+    background-color: rgb(38, 75, 46) ;
+}
+
+#snare{
+    text-align:center;
+    width:150px;
+    height:80px;
+    line-height:100px;
+    margin: 10px;
+    margin-top: 50px;
+    margin-bottom:0px;
+    font-size:60px;
+    background-color: red;
+}
+
+#snare:hover{
+    background-color: darkred;
+}
