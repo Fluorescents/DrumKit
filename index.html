@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function playSound(url) {
+            const audio = new Audio(url);
+            audio.play();
+        }
+
+        document.addEventListener("keyup", function(event) { 
+            document.getElementById("kick").style.backgroundColor = "white";
+            document.getElementById("kick").style.borderColor = "tan"; 
+            document.getElementById("tom").style.backgroundColor = "rgb(53, 122, 41)";
+            document.getElementById("snare").style.backgroundColor = "red";
+            document.getElementById("crash").style.backgroundColor = "gold";
+            document.getElementById("hihat").style.backgroundColor = "gold"; 
+        });
+        document.addEventListener("keypress", function(event) {
+            if (event.keyCode == 98) {
+                playSound("SFX/kick.mov");
+                document.getElementById("kick").style.backgroundColor = "rgb(145, 145, 145)";
+                document.getElementById("kick").style.borderColor = "rgb(118, 100, 78)";
+            }
+        });
+        document.addEventListener("keypress", function(event) {
+            if (event.keyCode == 118) {
+                playSound("SFX/tom.mov");
+                document.getElementById("tom").style.backgroundColor = "rgb(38, 75, 46)";
+            }
+        });
+        document.addEventListener("keypress", function(event) {
+            if (event.keyCode == 110) {
+                playSound("SFX/snare.mov");
+                document.getElementById("snare").style.backgroundColor = "darkred";
+            }
+        });
+        document.addEventListener("keypress", function(event) {
+            if (event.keyCode == 102) {
+                playSound("SFX/crash.mov");
+                document.getElementById("crash").style.backgroundColor = "darkgoldenrod";
+            }
+        });
+        document.addEventListener("keypress", function(event) {
+            if (event.keyCode == 106) {
+                playSound("SFX/hihat.mov");
+                document.getElementById("hihat").style.backgroundColor = "darkgoldenrod";
+            }
+        });
+    </script>
+
+    <div class="kit">
+        <div class="cymbals">
+            <div onmouseover="playSound('SFX/crash.mov')" id="crash">crash</div>
+            <div onmouseover="playSound('SFX/hihat.mov')" id="hihat">hihat</div>
+        </div>
+        <div class="drums">
+            <div onmouseover="playSound('SFX/tom.mov')" id="tom">tom</div>
+            <div onmouseover="playSound('SFX/kick.mov')" id="kick">kick</div>
+            <div onmouseover="playSound('SFX/snare.mov')" id="snare">snare</div>
+        </div>
+        
+    </div>
+</body>
+</html>
